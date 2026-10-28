@@ -18,7 +18,6 @@ d'information).
 ## Sources de données
 - Contexte statique injecté dans le Prompt Template (informations CTPES rédigées en dur,
   pas de base de données externe à ce stade)
-- Depuis v1.1.0 : inclut aussi les horaires d'accueil du centre
 
 ## Quelles sont ses limites ?
 - Répond UNIQUEMENT sur la base du contexte écrit dans le Prompt Template — aucune
@@ -34,10 +33,6 @@ d'information).
 - (pas encore de dashboard/mesure automatisée sur ce flow — à ajouter si mis en prod)
 
 ## Version & Revue
-- Version actuelle : v1.1.0
+- Version actuelle : v1.0.0 (première version fonctionnelle)
 - Date de création : 28/10/2026
 - Dernière revue : 28/10/2026
-
-### Historique des versions
-- **v1.0.0** (28/10/2026) : version initiale — FAQ sur services, financement, formation, accompagnement
-- **v1.1.0** (28/10/2026) : ajout d'une information (horaires d'accueil) — pas de changement de comportement, compatible avec v1.0.0
