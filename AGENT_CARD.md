@@ -28,6 +28,18 @@ d'information).
   manuellement (pas de source live)
 - Pas de garde-fou contre un prompt-injection avancé dans la question utilisateur
 
+## Mode de déploiement (Jour 24)
+- **Mode utilisé : Temps Réel (API)** — l'agent est exposé via l'interface chat/API de
+  la plateforme Agentic AI et répond à chaque question à la demande, instantanément.
+- **Pourquoi ce mode** : chaque requête est une question isolée d'un porteur de projet
+  qui attend une réponse immédiate — exactement le cas d'usage du déploiement temps réel
+  (par opposition à un traitement par lots programmé).
+- **Pourquoi pas les autres modes** :
+  - *Batch* — non pertinent, il n'y a pas de gros volume à traiter à intervalles réguliers.
+  - *Streaming* — non pertinent, il n'y a pas de flux continu d'événements à consommer.
+  - *Edge* — non pertinent, l'agent n'est pas embarqué sur un appareil local ; il s'exécute
+    côté plateforme (cloud), accessible via navigateur.
+
 ## KPI & Métriques
 - Taux de réponses pertinentes (dans le périmètre CTPES)
 - Taux de refus corrects (hors périmètre → refus poli, pas d'hallucination)
